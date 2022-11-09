@@ -24,7 +24,7 @@ function addElement(){
   $('#todo').append('<li><input type="text"></li>');
   // whenever the user are done add the element
 $('input').blur(function(){
-  $(this),parent().addClass('cool');
+  $(this).parent().addClass('cool');
   var userinput = $(this).val();
   $(this).parent().text(userinput);
   $('li').click(changeStyle);
